@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include 'testapp/cdn.html'%}
+  </head>
+  <body>
+    <div class="jumbotron">
+  <h1 class="display-4">Flipcart Website!</h1>
+
+    <a class="btn btn-primary btn-lg" href="{% url 'additems' %}" role="button">Add Items</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'display' %}" role="button">Dipsplay Items</a>
+
+</div>
+
+  </body>
+</html>

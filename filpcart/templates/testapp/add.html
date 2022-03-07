@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include 'testapp/cdn.html'%}
+  </head>
+  <body>
+    <h1>welcome to flipcart shoping app..... </h1>
+    <form  method="POST">
+      <table>
+        {{form.as_table}}
+        {% csrf_token %}
+      </table>
+      <input type="submit" class="btn btn-primary" value="sbmititem">
+      <a href="{% url 'display' %}" class="btn btn-success">Display Itmes</a>
+
+    </form>
+
+  </body>
+</html>
